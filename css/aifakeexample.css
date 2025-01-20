@@ -1,0 +1,216 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fefbf6;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+/*shapes in the backround that will be replaced with a custom backround*/
+.shape {
+  position: absolute; 
+  border-radius: 45%;
+  z-index: -1;
+}
+
+/*the blue shape*/
+.shape.blue {
+  background-color: #e3ebf2; 
+  width: 1200px;
+  height: 1100px;
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%); 
+}
+
+/*the green shape*/
+.shape.green {
+  background-color: #d4ddca; 
+  width: 1000px;
+  height: 1300px;
+  top: 70%;
+  left: 40%;
+  transform: translate(-50%, -50%); 
+}
+
+.dashboard {
+  display: flex; 
+  width: 100%;
+  height: 100%;
+  position: relative; 
+}
+
+/* the whole sidebar that lets the user navigate between pages*/ 
+.sidebar {
+  font-family: 'Arial', sans-serif;
+  background-color: #f1e8d8;
+  font-weight: bold;
+  width: 155px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: space-between; 
+  padding: 20px 0;
+}
+
+/* everything in the sidebar except for the "logout" button*/
+.menu {
+  display: flex; 
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* each of the icons (except for the log out button) in the sidebar that the user can click to go to certain pages*/
+.menu-item {
+  text-decoration: none;
+  color: #f1e8d8;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ad9878;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.menu-item:hover{
+  background-color: #8f7e64;
+}
+
+/* the logout button at the bottom left of the sidebar*/
+.logout {
+  font-weight: bold;
+  color: #f1e8d8;
+  text-decoration: none;
+  background-color: #ad9878;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+  
+.logout:hover {
+  background-color: #948267;
+}
+
+/* the main part of the page that contains the fake AI suggestion*/
+.main {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 100%;
+}
+
+/* background of the fake AI suggestion*/
+.page {
+  background-color: #fffdfa;
+  border-radius: 10px;
+  padding: 20px;
+  height: 90%;
+  border-radius: 20px;
+}
+
+/* stylization of the header "AI Task Analyzer" */
+.header {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fefbf6;
+  background-color: #ad9878;
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+
+/* stylization of a second header "Suggestions" */
+.header2{
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ad9878;
+}
+
+/* contains the part where the fake suggestion itself is presented*/
+.form {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  background-color: #d8cfbf;
+  padding: 10px 15px;
+  border-radius: 20px;
+  height: 60%;
+}
+
+/* table, in which different elements of the suggestion are placed*/
+.back{
+  background-color: #f1e8d8;
+  border-radius: 20px;
+  height: 100%;
+}
+
+/* stylization of the title of the suggestion (here: Task A and B are too similar) */
+.title{
+  background-color: #ad9878;
+  color: #f1e8d8;
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 10px 15px;
+  width: 60%;
+  margin-left: 5%;
+}
+
+/* stylization of the suggestion's description */
+.suggestion{
+  background-color: #e4dac9;
+  color: #897250;
+  border-radius: 20px;
+  height: 140px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-size: 18px;
+  text-align: justify;
+  padding: 10px 10px;
+}
+
+/* stylization of the accept or reject buttons */
+.choice-btn {
+  background-color: #fefbf6;
+  color: #897250;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 100px;
+  height: 60px;
+  margin-top: 25px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.choice-btn:hover{
+  background-color: #e4e0db;
+}
+
+/* stylization of the end analysis button */
+.end-btn{
+  background-color: #e4dac9;
+  color: #897250;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 140px;
+  height: 40px;
+  margin-left: 44%;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.end-btn:hover{
+  background-color: #cbc3b4;
+}

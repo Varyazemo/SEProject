@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: The 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+/*shapes in the backround that will be replaced with a custom backround*/
+.shape {
+    position: absolute; 
+    border-radius: 45%;
+  }
+  
+.shape.white1 {
+    background-color: #fefbf6; 
+    width: 600px;
+    height: 200px;
+    top: 0%;
+    left: 100%;
+    transform: translate(-50%, -50%); 
+}
+  
+.shape.white2 {
+    background-color: #fefbf6; 
+    width: 450px;
+    height: 650px;
+    top: 100%;
+    left: 0%;
+    transform: translate(-10%, -50%); 
+}
+
+/*the whole page*/
+.projects-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e3ebf2;
+    gap: 20px;
+}
+
+/*the boxes that contain the created project and an add button*/
+.project-card {
+    width: 200px;
+    height: 200px;
+    background-color: #fefbf6;
+    border: 2px solid #f0e7d7;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    color: #727272;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* the '+' in the box project-card*/
+.add-btn {
+    font-size: 40px;
+}
+
+/* the created project 'phase 1' */
+.projectA{
+    text-decoration: none;
+    color: #727272;
+}
+
+.project-card:hover{
+    background-color: #F2F2F2;
+}

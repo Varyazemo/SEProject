@@ -1,0 +1,207 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  background-color: #d8cfbf;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+/*shapes in the backround that will be replaced with a custom backround*/
+.shape {
+  position: absolute; 
+  border-radius: 45%;
+  z-index: -1;
+}
+
+/*the blue shape*/
+.shape.blue {
+  background-color: #e3ebf2; 
+  width: 700px;
+  height: 400px;
+  top: 0%;
+  left: 90%;
+  transform: translate(-50%, -50%); 
+}
+
+/*the green shape*/
+.shape.green {
+  background-color: #d4ddca; 
+  width: 600px;
+  height: 900px;
+  top: 100%;
+  left: 20%;
+  transform: translate(-50%, -50%); 
+}
+
+/* contains everything in the body, except the shapes*/
+.dashboard {
+  display: flex; 
+  width: 100%;
+  height: 100%;
+  position: relative; 
+}
+ 
+/* the whole sidebar that lets the user navigate between pages*/
+.sidebar {
+  background-color: #f1e8d8;
+  font-weight: bold;
+  width: 100px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: space-between; 
+  padding: 20px 0;
+}
+
+/* everything in the sidebar except for the "logout" button*/
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* each of the icons (except for the log out button) in the sidebar that the user can click to go to certain pages*/
+.menu-item {
+  text-decoration: none;
+  color: #f1e8d8;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ad9878;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  }
+
+.menu-item:hover{
+  background-color: #8f7e64;
+}
+
+/* the logout button at the bottom left of the sidebar*/
+.logout {
+  font-weight: bold;
+  color: #f1e8d8;
+  text-decoration: none;
+  background-color: #ad9878;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+  
+.logout:hover {
+  background-color: #948267;
+}
+
+/* contains the list of tasks separated into the 3 categories (to do, in progress, completed) */
+.board {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* the design of each column for each category (to do, in progress, completed) */
+.column {
+  flex: 1;
+  background-color: #fefbf6;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* stylization for eachh category heading */
+.column h2 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #897250;
+  border-radius: 25px;
+  background-color: #e4dac9;
+  padding: 15px;
+}
+
+/* stylization of each task in the list*/
+.task {
+  background-color: #f1e8d8;
+  color: #897250;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+}
+
+/* the link that was used to display how the user will be sent to the editing page, named "Task name" */
+.edit{
+  text-decoration: none;
+  color: #897250;
+}
+
+/* the tasks themselves and additional elements like the priority and the x button that will be used to delete tasks*/
+.task .additions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+ 
+/*stylization of the priority displayed next to each task name*/
+.priority {
+  background-color: #ad9878;
+  color: #f1e8d8;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* stylization of each x button next to the task name */
+.delete {
+  background-color: #ad9878;
+  color: #f1e8d8;
+  border-radius: 25px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+  
+.delete:hover {
+  color: rgb(255, 255, 255);
+}
+  
+/* stylization of the button at the bottom of the to do category that will let the users add tasks*/
+.add-task {
+  margin-top: auto;
+  background-color: #ad9878;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 24px;
+  align-self: center;
+}
+  
+.add-task:hover {
+  background-color: #907f65;
+}
+
+/* a temporary replacement of the "add task" action used to visualize the action in the prototype; the link '+'*/
+.plus{
+  text-decoration: none;
+  color: #f1e8d8;
+}
+  

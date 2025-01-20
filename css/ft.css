@@ -1,0 +1,302 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #d8cfbf;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+/*shapes in the backround that will be replaced with a custom backround*/
+.shape {
+  position: absolute; 
+  border-radius: 45%;
+  z-index: -1;
+}
+
+/*the blue shape*/
+.shape.blue {
+  background-color: #e3ebf2; 
+  width: 800px;
+  height: 500px;
+  top: 10%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+/*the green shape*/
+.shape.green {
+  background-color: #d4ddca; 
+  width: 800px;
+  height: 600px;
+  top: 70%;
+  left: 90%;
+  transform: translate(-50%, -50%); 
+}
+
+/* the whole sidebar that lets the user navigate between pages*/
+.sidebar {
+  font-family: 'Arial', sans-serif;
+  background-color: #f1e8d8;
+  font-weight: bold;
+  width: 135px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: space-between; 
+  padding: 20px 0;
+}
+
+/* everything in the sidebar except for the "logout" button*/
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* each of the icons (except for the log out button) in the sidebar that the user can click to go to certain pages*/
+.menu-item {
+  text-decoration: none;
+  color: #f1e8d8;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ad9878;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.menu-item:hover{
+  background-color: #8f7e64;
+}
+
+/* the logout button at the bottom left of the sidebar*/
+.logout {
+  font-weight: bold;
+  color: #f1e8d8;
+  text-decoration: none;
+  background-color: #ad9878;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  }
+    
+.logout:hover {
+  background-color: #948267;
+}
+
+/* contains the focus mode and timer*/
+.focus-timer {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* the separate boxes for the focus mode and the timer*/
+.focus, .timer {
+  background-color: #fefbf6;
+  padding: 20px;
+  border-radius: 15px;
+  width: 45%;
+  height: 80%;
+  margin-top: 5%;
+}
+
+/* the headings of each box ( "Focus mode" n "Timer" */
+h2{
+ background-color: #e4dac9;
+ border-radius: 20px;
+ text-align: center;
+ padding: 10px 10px;
+ color: #897250;
+}
+
+/*used to align the content ( except for h2) in the boxes*/
+.content{
+  text-align: center;
+}
+
+/* the label next to the sliding button*/
+.name{
+  color: #ad9878;
+  font-size: 30px;
+  font-weight: bold;
+  align-self: center;
+ }
+
+
+/* the box around the sliding button*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+  
+/* used to hide the default look of the button */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+  
+/* the slider and it's backround, when it is turned off */
+  .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #d8cfbf;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* the balls appearance before being checked*/
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fefbf6;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* the backrounf of the button when it is turned on*/
+input:checked + .slider {
+  background-color: #aea79a;
+}
+  
+input:focus + .slider {
+  box-shadow: 0 0 1px #aaa398;
+}
+  
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+  
+  /* to make the button round*/
+.slider.round {
+  border-radius: 34px;
+}
+  
+.slider.round:before {
+  border-radius: 50%;
+}  
+
+/* the "allowed applications" title*/
+h3{
+  color: #ad9878;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* the tables used to position the objects properly*/
+table{
+  font-family: The 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 15px;
+}
+
+/* the table that contains "focus mode" and the button to toggle focus mode*/
+.focus-mode{
+  margin-top: 10%;
+}
+
+/* table that contains the list of allowed applications*/
+.allowed{
+  background-color: #d8cfbf;
+  border-radius: 20px;
+  width: 80%;
+  height: 300px;
+}
+
+/* how the applications in the list will be displayed*/
+.app-name{
+  background-color: #fefbf6;
+  color: #897250;
+  font-size: 18px;
+  padding: 10px 10px;
+  border-radius: 20px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* fake icons of the allowed applications*/
+.icon{
+  background-color: #c8eef5;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
+}
+
+/* buttons next to each allowed application to remove it from the list*/
+.remove{
+  color: #fefbf6;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.remove:hover{
+  color: #6e4b2e;
+}
+
+/* "add aplication" button to add new ones to the list*/
+.add-app-butt{
+  background-color: #fefbf6;
+  color: #897250;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 10px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.add-app-butt:hover{
+  background-color: #eae7e2;
+}
+
+/* displays the 00:00:00, which will be replaced by a real timer in the future*/
+.timer-display{
+  color: #ad9878;
+  font-weight: bold;
+  font-size: 100px;
+  margin-top: 20%;
+}
+
+/* contains the play, pause and stop buttons*/
+.timer-buttons{
+  margin-top: 15%;
+}
+
+/* stylization of the start, pause and stop buttons*/
+.timer-btn{
+  background-color: #d8cfbf;
+  color: #fefbf6;
+  border-radius: 20%;
+  border: none;
+  padding: 10px 10px;
+  font-size: 25px;
+  width: 100px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.timer-btn:hover{
+    background-color: #a49d92;
+}
