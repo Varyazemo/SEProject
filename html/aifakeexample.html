@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="aifakeexample.css">
+</head>
+<body>
+  <!--the 2 shapes in the backround; must be removed, when the custom backround is be created-->
+  <div class="shape blue"></div>
+  <div class="shape green"></div>
+  <div class="dashboard">
+    <!--the side navigation bar that lets the user access different pages-->
+    <aside class="sidebar">
+      <div class="menu">
+        <a href="task.html" class="menu-item"><span>L</span></a>
+        <a href="calendar.html" class="menu-item"><span>🏽</span></a>
+        <a href="ft.html" class="menu-item"><span>F/T</span></a>
+        <a href="aifakeexample.html" class="menu-item"><span>AI</span></a>
+        <a href="project.html" class="menu-item"><span>Pr</span></a>
+      </div>
+      <a href="enter.html" class="logout">Log out</a>
+    </aside>
+      <div class="main">
+        <!-- an example of the AI assistant suggestion page is created-->
+      <div class="page" id="ai-page">
+        <h2 class="header">AI Task Analyzer</h2>
+        <h2 class="header2">Suggestions</h2>
+        <div class="form">
+        <table class="back">
+          <tr>
+           <th><p class="title">Task A and B are too similar</p></th>
+           <th><button class="choice-btn">Accept</button></th>
+        </tr>
+        <tr>
+          <th><div class="suggestion">
+           New Task AB Name: Lorem Ipsum <br>
+          New Task Description: ABCDEFGHIJK<br>
+          New Task. <br>..etc.
+          </div></th>
+          <th><button class="choice-btn">Reject</button></th>
+        </tr> 
+        </table>
+        </div>
+        <!-- fake button, will be replaced with a real functional one in the future-->
+        <button class="end-btn">End Analysis</button>
+      </div>
+    </div>
+</body>
+</html>

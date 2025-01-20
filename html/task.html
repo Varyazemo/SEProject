@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasks</title>
+  <link rel="stylesheet" href="task.css">
+</head>
+<body>
+  <!--the 2 shapes in the backround; must be removed, when the custom backround is be created-->
+  <div class="shape blue"></div>
+    <div class="shape green"></div>
+  <div class="dashboard">
+    <!--the side navigation bar that lets the user access different pages-->
+    <aside class="sidebar">
+      <div class="menu">
+        <a href="task.html" class="menu-item"><span>L</span></a>
+        <a href="calendar.html" class="menu-item"><span>🏽</span></a>
+        <a href="ft.html" class="menu-item"><span>F/T</span></a>
+        <a href="aifakeexample.html" class="menu-item"><span>AI</span></a>
+        <a href="project.html" class="menu-item"><span>Pr</span></a>
+      </div>
+      <a href="enter.html" class="logout">Log out</a>
+    </aside>
+    <main class="board">
+      <!--column with tasks that have a to do status-->
+      <div class="column">
+        <h2>TO DO</h2>
+        <div class="task">
+          <span><a href=editing.html class="edit">Task name</a></span>
+          <div class="additions">
+            <span class="priority">L</span>
+            <button class="delete">✖</button>
+          </div>
+        </div>
+        <div class="task">
+          <span>Task name</span>
+          <div class="additions">
+            <span class="priority">M</span>
+            <button class="delete">✖</button>
+          </div>
+        </div>
+        <!--button that lets users add new tasks-->
+        <button class="add-task"><a class="plus" href="creation.html">+</a></button>
+      </div>
+      <!--column with tasks that have a in progress status-->
+      <div class="column">
+        <h2>IN PROGRESS</h2>
+        <div class="task">
+          <span>Task name</span>
+          <div class="additions">
+            <span class="priority">H</span>
+            <button class="delete">✖</button>
+          </div>
+        </div>
+      </div>
+      <!--column with tasks that have a completed status-->
+      <div class="column">
+        <h2>COMPLETED</h2>
+        <div class="task">
+          <span>Task name</span>
+          <div class="additions">
+            <span class="priority">H</span>
+            <button class="delete">✖</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

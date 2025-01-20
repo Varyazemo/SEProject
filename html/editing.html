@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editing</title>
+  <link rel="stylesheet" href="editing.css">
+</head>
+<body>
+  <!--the 2 shapes in the backround; must be removed, when the custom backround is be created-->
+  <div class="shape blue"></div>
+    <div class="shape green"></div>
+    <div class="dashboard">
+      <!--the side navigation bar that lets the user access different pages-->
+      <aside class="sidebar">
+        <div class="menu">
+          <a href="task.html" class="menu-item"><span>L</span></a>
+          <a href="calendar.html" class="menu-item"><span>🏽</span></a>
+          <a href="ft.html" class="menu-item"><span>F/T</span></a>
+          <a href="aifakeexample.html" class="menu-item"><span>AI</span></a>
+          <a href="project.html" class="menu-item"><span>Pr</span></a>
+        </div>
+          <a href="enter.html" class="logout">Log out</a>
+      </aside>
+      <div class="main">
+         <!-- the main part of the page made to edit tasks-->
+        <div class="page" id="editing-page">
+          <h2 class="header">EDITING</h2>
+          <div class="form">
+            <!--the left side of the displayed form for editing-->
+            <div class="left-panel">
+              <div class="task-name">Task name</div>
+              <textarea class="input">Lorem ipsum dolor sit amet...</textarea>
+              <div class="rel-link">Relative Links</div>
+              <textarea type="url" class="input">https://example.com</textarea>
+            </div>
+            <!--the right side of the displayed form for editing-->
+            <div class="right-panel">
+              <div class="priority">Task Priority: <span class="priority-icon">L</span></div>
+              <div class="dependencies">
+                 <p>Dependencies:</p>
+                <div class="back-dep">
+                 <div class="deptask">Name of task</div>
+                 <div class="deptask">Name of task</div>
+                </div>
+              </div>
+              <div class="date">Due Date: DD.MM.YYYY</div>
+              <div class="category">
+                <p>Category:</p>
+               <div class="cat">
+                <label class="choice"><input type="radio" name="category" checked="checked"> To Do</label>
+                <label class="choice"><input type="radio" name="category"> In Progress</label>
+                <label class="choice"><input type="radio" name="category"> Complete</label>
+               </div>
+              </div>
+              <!-- fake "save button", will be replaced with a button that saves the changes to the database-->
+              <a href="task.html" class="save-btn">Save</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>

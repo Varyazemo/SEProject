@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity</title>
+    <link rel="stylesheet" href="ft.css">
+</head>
+<body>
+        <!--the 2 shapes in the backround; must be removed, when the custom backround is be created-->
+        <div class="shape blue"></div>
+        <div class="shape green"></div>
+        <!--the side navigation bar that lets the user access different pages-->
+        <aside class="sidebar">
+            <div class="menu">
+              <a href="task.html" class="menu-item"><span>L</span></a>
+              <a href="calendar.html" class="menu-item"><span>🏽</span></a>
+              <a href="ft.html" class="menu-item"><span>F/T</span></a>
+              <a href="aifakeexample.html" class="menu-item"><span>AI</span></a>
+              <a href="project.html" class="menu-item"><span>Pr</span></a>
+            </div>
+            <a href="enter.html" class="logout">Log out</a>
+          </aside>
+        <div class="focus-timer">
+            <!-- the part of the page displaying focus mode-->
+            <div class="focus">
+                <h2>Focus Mode</h2>
+                <div class="content">
+                    <!-- the toggle button to turn the focus mode on and off-->
+                    <table class="focus-mode">
+                     <tr>
+                      <th><label class="name">Focus Mode</label></th>
+                      <th><label class="switch"> <input type="checkbox"><span class="slider round"></span></label></th> 
+                     </tr>
+                    </table>
+                 <!-- list of applications allowed to be used during focus mode, will be replaced by real applications in the future-->
+                 <h3>Allowed Applications</h3>
+                 <div class="allowed-applications">
+                    <table class="allowed">
+                    <tr>
+                      <th><div class="app-name"><span class="icon">💠</span>Name of Application</div></th>
+                      <th><div class="remove">X</div></th>
+                    </tr>
+                    <tr>
+                      <th><div class="app-name"><span class="icon">💎</span>Name of Application</div></th>
+                      <th><div class="remove">X</div></th>
+                    </tr>
+                    <tr>
+                      <th><button class="add-app-butt">Add new Application</button></th>
+                    </tr>
+                    </table>
+                 </div>
+                </div>
+            </div>
+            <!-- fake timer that will be replaced by a real one-->
+            <div class="timer">
+                <h2>Timer</h2>
+                <div class="content">
+                <div class="timer-display">00:00:00</div>
+                <div class="timer-buttons">
+                    <button class="timer-btn">Play</button>
+                    <button class="timer-btn">Pause</button>
+                    <button class="timer-btn">Stop</button>
+                </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

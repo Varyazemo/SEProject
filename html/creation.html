@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creation</title>
+  <link rel="stylesheet" href="creation.css">
+</head>
+<body>
+  <!--the 2 shapes in the backround; must be removed, when the custom backround is be created-->
+  <div class="shape blue"></div>
+    <div class="shape green"></div>
+    <div class="dashboard">
+      <!--the side navigation bar that lets the user access different pages-->
+      <aside class="sidebar">
+        <div class="menu">
+          <a href="task.html" class="menu-item"><span>L</span></a>
+          <a href="calendar.html" class="menu-item"><span>🏽</span></a>
+          <a href="ft.html" class="menu-item"><span>F/T</span></a>
+          <a href="aifakeexample.html" class="menu-item"><span>AI</span></a>
+          <a href="project.html" class="menu-item"><span>Pr</span></a>
+        </div>
+        <a href="enter.html" class="logout">Log out</a>
+      </aside>
+      <div class="main">
+        <!-- the main part of the page made to create tasks-->
+        <div class="page" id="editing-page">
+          <h2 class="header">CREATION</h2>
+          <div class="form">
+            <!--the left side of the displayed form for creating a task-->
+            <div class="left-panel">
+              <div class="labels">Task name</div>
+              <input type="text" class="enter-name" placeholder="Enter task name..">
+              <div class="labels">Description</div>
+              <textarea class="input" placeholder="Enter description..."></textarea>
+              <div class="labels">Relative Links</div>
+              <textarea type="url" class="input" placeholder="Enter any relevant links..."></textarea>
+            </div>
+            <!--the right side of the displayed form for creating a task-->
+            <div class="right-panel">
+              <div class="priority">
+                <p>Task Priority:</p>
+                <label class="choice"><input type="radio" name="category" checked="checked"> <span class="priority-icon">L</span></label>
+                <label class="choice"><input type="radio" name="category"><span class="priority-icon">M</span></label>
+                <label class="choice"><input type="radio" name="category"><span class="priority-icon">H</span></label>
+              </div>
+              <div class="dependencies">
+                <p>Dependencies:</p>
+                <div class="back-dep">
+                <div class="deptask">Name of task</div>
+                <button class="add-dep">+</button>
+              </div>
+              </div>
+              <div class="date">Due Date</div>
+              <input type="date" class="input-date" >
+              <!-- fake "add" button, will be replaced with a button that saves the new task to the database-->
+              <a href="task.html" class="add-btn">Add</a>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

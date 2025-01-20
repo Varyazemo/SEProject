@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management</title>
+    <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+    <!--the 2 shapes in the backround; must be removed, when the custom backround is be created-->
+    <div class="shape blue"></div>
+    <div class="shape green"></div>
+    <div class="dashboard">
+      <!--the side navigation bar that lets the user access different pages-->
+      <aside class="sidebar">
+        <div class="menu">
+          <a href="task.html" class="menu-item"><span>L</span></a>
+          <a href="calendar.html" class="menu-item"><span>🏽</span></a>
+          <a href="ft.html" class="menu-item"><span>F/T</span></a>
+          <a href="aifakeexample.html" class="menu-item"><span>AI</span></a>
+          <a href="project.html" class="menu-item"><span>Pr</span></a>
+        </div>
+        <a href="enter.html" class="logout">Log out</a>
+      </aside>
+        <div class="calendar">
+            <!-- A visualization of the buttons to change years or months; will be replaced with functional ones-->
+            <div class="calendar-header">
+                <div class="month-year">
+                    <button class="btn"> &larr;</button>
+                    <span>Month</span>
+                    <button class="btn">&rarr;</button>
+                    <button class="btn">&larr;</button>
+                    <span>Year</span>
+                    <button class="btn">&rarr;</button>
+                </div>
+            </div>
+         <!-- A mock calendar to show how the calendar page might look like-->   
+         <table class="cal-back">
+             <thead>
+                  <tr>
+                     <th>Sunday</th>
+                     <th>Monday</th>
+                     <th>Tueday</th>
+                     <th>Wednesday</th>
+                     <th>Thursday</th>
+                     <th>Friday</th>
+                     <th>Saturday</th>
+                  </tr>
+             </thead>
+             <tbody>
+                  <tr>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td>1</td>
+                     <td>2</td>
+                 </tr>
+                  <tr>
+                     <td>3</td>
+                     <td>4</td>
+                     <td>5</td>
+                     <td>6</td>
+                     <td>7</td>
+                     <td>8</td>
+                     <td>9</td>
+                  </tr>
+                  <tr>
+                     <td>10</td>
+                     <td>11</td>
+                     <td>12</td>
+                     <td>13</td>
+                     <td>14</td>
+                     <td>15</td>
+                     <td>16<br><span class="today">TODAY</span></td>
+                 </tr>
+                  <tr>
+                     <td>17</td>
+                     <td>18</td>
+                     <td>19<br><span class="due-task">Taskname</span></td>
+                     <td>20</td>
+                     <td>21</td>
+                     <td>22</td>
+                     <td>23</td>
+                  </tr>
+                  <tr>
+                     <td>24</td>
+                     <td>25</td>
+                     <td>26</td>
+                     <td>27</td>
+                     <td>28<br><span class="due-task">Taskname</span></td>
+                     <td>29</td>
+                     <td>30</td>
+                  </tr>
+                  <tr>
+                     <td>31</td>
+                     <td>1</td>
+                     <td>2</td>
+                     <td>3</td>
+                     <td>4</td>
+                     <td>5</td>
+                     <td>6</td>
+                  </tr>
+             </tbody>
+           </table>
+        </div>
+    </div>
+</body>
+</html>   
